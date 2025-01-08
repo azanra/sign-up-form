@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+:root {
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 body {
     margin: 0;
     width: 100%;
@@ -33,12 +37,22 @@ body {
     height: 15%;
     width: 100%;
     padding: 2%;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-section {
     background-image: url(../image/odin-lined.png);
-    width: 100%;
+    width: 15%;
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.logo-text {
+    color: white;
+    font-family: "norse", var(--system-ui);
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
 }
