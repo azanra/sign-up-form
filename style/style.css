@@ -49,10 +49,24 @@ body {
     background-repeat: no-repeat;
 }
 
-.logo-text {
+.logo-text, 
+.credit-section,
+.credit-section > p > a {
     color: white;
+}
+
+.logo-text, 
+.credit-section {
+    display: flex;
+}
+
+.logo-text {
     font-family: "norse", var(--system-ui);
     font-size: 6rem;
-    display: flex;
     align-items: center;
+}
+
+.credit-section {
+    justify-content: center;
+    margin-top: 620px;
 }
