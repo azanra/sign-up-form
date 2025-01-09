@@ -77,8 +77,13 @@ body {
     width: 63%;
 }
 
-.promotion-text {
+.promotion-text,
+.form-text {
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+.promotion-text,
+.form-section {
     margin-left: 7.5%;
 }
