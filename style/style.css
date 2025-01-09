@@ -90,7 +90,6 @@ body {
     margin-left: 7.5%;
 }
 
-
 label {
     display: block;
     font-size: 0.95rem;
@@ -98,18 +97,26 @@ label {
 
 .form-section {
     width: 1000px;
-    height: 400px;
-    background-color: var(--form-bg);
+    height: 500px;
+    margin-top: 8%;
 }
 
 .input-section {
-    height: 300px;
+    height: 315px;
+    background-color: var(--form-bg);
+    margin-bottom: 3.5%;
+}
+
+.input-section,
+input,
+button {
+    border-radius: 5px;
 }
 
 .input-section,
 .btn-section,
 .login-section {
-    margin-left: 6%;
+    padding-left: 6%;
 }
 
 .first-section,
@@ -125,3 +132,6 @@ input {
     height: 25px;
 }
 
+.form-text {
+    padding-top: 2%;
+}
