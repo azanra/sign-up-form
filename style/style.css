@@ -8,6 +8,8 @@
 
 :root {
     --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --body-bg : rgb(245, 245, 245);
+    --form-bg : rgb(255, 255, 255);
 }
 
 body {
@@ -15,6 +17,7 @@ body {
     width: 100%;
     height: 1024px;
     font-family: var(--system-ui);
+    background-color: var(--body-bg);
 }
 
 .main-section {
@@ -83,10 +86,10 @@ body {
     font-size: 1.5rem;
 }
 
-.promotion-text,
-.form-section {
+.promotion-text{
     margin-left: 7.5%;
 }
+
 
 label {
     display: block;
@@ -94,8 +97,19 @@ label {
 }
 
 .form-section {
-    width: 800px;
+    width: 1000px;
     height: 400px;
+    background-color: var(--form-bg);
+}
+
+.input-section {
+    height: 300px;
+}
+
+.input-section,
+.btn-section,
+.login-section {
+    margin-left: 6%;
 }
 
 .first-section,
@@ -110,3 +124,4 @@ input {
     width: 250px;
     height: 25px;
 }
+
