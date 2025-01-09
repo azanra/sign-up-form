@@ -90,10 +90,12 @@ body {
 
 label {
     display: block;
+    font-size: 0.95rem;
 }
 
 .form-section {
     width: 800px;
+    height: 400px;
 }
 
 .first-section,
@@ -102,4 +104,9 @@ label {
     display: flex;
     gap: 60px;
     margin-bottom: 20px;
+}
+
+input {
+    width: 250px;
+    height: 25px;
 }
