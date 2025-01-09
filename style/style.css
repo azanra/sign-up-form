@@ -87,3 +87,19 @@ body {
 .form-section {
     margin-left: 7.5%;
 }
+
+label {
+    display: block;
+}
+
+.form-section {
+    width: 800px;
+}
+
+.first-section,
+.second-section,
+.third-section {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 20px;
+}
