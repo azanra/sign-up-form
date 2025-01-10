@@ -10,6 +10,9 @@
     --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --body-bg : rgb(245, 245, 245);
     --form-bg : rgb(255, 255, 255);
+    --input-border: rgb(229, 231, 235);
+    --label-text: rgb(41, 41, 41);
+    --input-shadow : rgb(235, 235, 235);
 }
 
 body {
@@ -93,6 +96,7 @@ body {
 label {
     display: block;
     font-size: 0.95rem;
+    color: var(--label-text);
 }
 
 .form-section {
@@ -130,8 +134,19 @@ button {
 input {
     width: 250px;
     height: 25px;
+    border: 1px solid var(--input-border);
 }
 
 .form-text {
     padding-top: 2%;
+}
+
+input:invalid:required {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 3.5px 3.5px var(--input-shadow);
 }
