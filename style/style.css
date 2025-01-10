@@ -13,6 +13,7 @@
     --input-border: rgb(229, 231, 235);
     --label-text: rgb(41, 41, 41);
     --input-shadow : rgb(235, 235, 235);
+    --btn-bg : #596D48;
 }
 
 body {
@@ -96,6 +97,10 @@ body {
 label {
     display: block;
     font-size: 0.95rem;
+}
+
+label,
+.form-text {
     color: var(--label-text);
 }
 
@@ -109,6 +114,7 @@ label {
     height: 315px;
     background-color: var(--form-bg);
     margin-bottom: 3.5%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.05);
 }
 
 .input-section,
@@ -135,6 +141,8 @@ input {
     width: 250px;
     height: 25px;
     border: 1px solid var(--input-border);
+    padding: 2.5px 10px;
+    font-size: 1rem;
 }
 
 .form-text {
@@ -156,7 +164,7 @@ input:focus,
 }
 
 .btn-section > button{
-    background-color: #596D48;
+    background-color: var(--btn-bg);
     color: white;
     font-family: inherit;
     font-weight: bold;
@@ -165,3 +173,8 @@ input:focus,
     padding: 12.5px 50px;
 }
 
+.login-section > p > a {
+    color: var(--btn-bg);
+    text-decoration: none;
+    font-weight: bold;
+}
