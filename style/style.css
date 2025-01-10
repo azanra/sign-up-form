@@ -148,5 +148,20 @@ input:invalid:required {
 input:focus {
     border: 1px solid blue;
     outline: none;
-    box-shadow: 3.5px 3.5px var(--input-shadow);
 }
+
+input:focus,
+.btn-section > button {
+    box-shadow: 4px 4px var(--input-shadow);
+}
+
+.btn-section > button{
+    background-color: #596D48;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+    font-size: 1rem;
+    padding: 12.5px 50px;
+}
+
